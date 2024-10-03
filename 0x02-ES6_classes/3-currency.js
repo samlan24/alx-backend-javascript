@@ -17,7 +17,7 @@ export default class Currency {
 
   get name() {
     return this._name;
-  } 
+  }
 
   set name(name) {
     if (typeof name !== 'string') {
@@ -27,6 +27,6 @@ export default class Currency {
   }
 
   static displayFullCurrency(currency) {
-    return `${currency._name} (${currency._code})`;
+    return `${currency.name} (${currency.code})`;
   }
 }
